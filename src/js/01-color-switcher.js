@@ -3,6 +3,10 @@ const refs = {
   stopBtn: document.querySelector('[data-stop]'),
 };
 
+// определить значение timerId - без этого функция не работает,
+// timerId - underfined
+let timerId = null;
+
 refs.startBtn.addEventListener('click', onChangeColor);
 refs.stopBtn.addEventListener('click', onStopChangeColor);
 
